@@ -122,9 +122,13 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 <main class="main"><div class="page-wrap"><div class="card-grid" id="cardGrid"></div></div></main>
 <footer class="site-footer"><div class="page-wrap"><div id="gf"></div></div></footer>
 <script>
-fetch('../../footer.html').then(function(r){return r.text()}).then(function(d){
-  var g=document.getElementById('gf');if(!g)return;
-  g.innerHTML=d;
+fetch('footer.html').then(function(r){
+ if (!r.ok) return null; 
+ return r.text();
+}).then(function(d){
+ if (!d) return;
+ var g = document.getElementById('gf'); if (!g) return;
+ g.innerHTML = d;
 }).catch(function(){});
 </script>
 
