@@ -10,7 +10,7 @@
 <meta property="og:title" content="中国学者TOP影像杂志前沿研究精选报告 · 2026年10月">
 <meta property="og:description" content="40篇中国学者原创研究">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:url" content="top_Imaging_journal_Chinese_Author_report_202610.html">
+<meta property="og:url" content="https://xuzuolizzie.github.io/chinese-scholar-dashboard/versions/2026-oct/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中国学者TOP影像杂志前沿研究精选报告 · 2026年10月">
 <meta name="twitter:description" content="40篇中国学者原创研究">
@@ -26,10 +26,12 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 .page-wrap{max-width:1240px;margin:0 auto;padding:0 1.5rem}
 .site-header{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--color-bg) 85%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--color-border);padding:.875rem 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.header-actions{display:flex;align-items:center;gap:.75rem}
 .brand{display:flex;align-items:center;gap:.75rem}
 .brand-logo{width:36px;height:36px;flex-shrink:0}
 .brand-title{font-family:var(--font-display);font-size:1.125rem;font-weight:800;color:var(--color-text);line-height:1.1}
 .brand-sub{font-size:.75rem;color:var(--color-text-muted);font-weight:500}
+.brand-text{display:flex;flex-direction:column;gap:.125rem}
 .count-badge{font-size:.75rem;font-weight:700;background:var(--color-primary-highlight);color:var(--color-primary);padding:.25rem .75rem;border-radius:9999px}
 .theme-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-md);color:var(--color-text-muted)}
 .theme-btn:hover{background:var(--color-surface-offset);color:var(--color-text)}
@@ -120,7 +122,7 @@ button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 <main class="main"><div class="page-wrap"><div class="card-grid" id="cardGrid"></div></div></main>
 <footer class="site-footer"><div class="page-wrap"><div id="gf"></div></div></footer>
 <script>
-fetch('/footer.html').then(function(r){return r.text()}).then(function(d){
+fetch('../../footer.html').then(function(r){return r.text()}).then(function(d){
   var g=document.getElementById('gf');if(!g)return;
   g.innerHTML=d;
 }).catch(function(){});
